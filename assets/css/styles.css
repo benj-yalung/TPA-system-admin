@@ -26,6 +26,16 @@ header {
   width: 20%;
 }
 
+nav {
+  & .nav-link {
+    color: white;
+  }
+
+  & a[aria-current="page"] {
+    color: aqua;
+  }
+}
+
 /**
 Main
 **/
