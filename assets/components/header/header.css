@@ -1,0 +1,34 @@
+/**
+Header
+**/
+
+.sidebar {
+  background-color: #0f0346;
+}
+
+header {
+  & .site-logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
+  & hr {
+    border: 1px solid white;
+  }
+}
+
+nav {
+  & .nav-link {
+    color: white;
+    font-weight: 500;
+
+    &:hover {
+      color: aqua;
+    }
+  }
+
+  & a[aria-current="page"] {
+    color: aqua;
+  }
+}

@@ -1,0 +1,42 @@
+/**
+Fonts
+**/
+
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/**
+Body
+ **/
+
+body {
+  background-color: #f8f9fa;
+}
+
+:root {
+  --bs-body-font-family: "Roboto", "Arial", sans-serif;
+}
+
+/**
+Main
+**/
+main {
+  & .search-row {
+    & .col-notifs {
+      & button {
+        background-color: white;
+        width: 2.5rem;
+        height: 2.5rem;
+
+        &.profile {
+          background-image: url(../img/logo.png);
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+/**
+Footer
+**/
