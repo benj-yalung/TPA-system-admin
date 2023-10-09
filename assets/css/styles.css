@@ -24,11 +24,22 @@ Header
 header {
   background-color: #0f0346;
   width: 20%;
+
+  & .site-logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
+  & hr {
+    border: 1px solid white;
+  }
 }
 
 nav {
   & .nav-link {
     color: white;
+    font-weight: 400;
   }
 
   & a[aria-current="page"] {
