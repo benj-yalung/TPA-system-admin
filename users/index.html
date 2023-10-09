@@ -103,9 +103,10 @@
 
       <div class="col offset-2">
         <main class="max-vh-100 px-5 py-4">
-          <div class="row">
+          <div class="row search-row align-items-center">
             <div class="col-6">
-              <form action="">
+              <!-- START # Search Bar # START -->
+              <form action="" class="m-0">
                 <div class="input-group">
                   <input
                     type="text"
@@ -119,14 +120,27 @@
                   </span>
                 </div>
               </form>
+              <!-- END # Search Bar # END -->
             </div>
-            <div class="col-2"></div>
-            <div class="col-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel harum
-              deleniti accusamus totam, veritatis sint architecto doloribus
-              placeat ratione blanditiis libero corrupti quisquam soluta.
-              Repellat velit reprehenderit minima qui laboriosam.
+
+            <div class="col-3"></div>
+
+            <!-- START # Notifications, Messages, Profile # START -->
+            <div class="col-3 col-notifs d-flex gap-4">
+              <!-- Notifications -->
+              <button type="button" class="btn btn-light rounded-circle">
+                <i class="fa-solid fa-bell"></i>
+              </button>
+
+              <!-- Messages -->
+              <button type="button" class="btn btn-light rounded-circle">
+                <i class="fa-solid fa-envelope"></i>
+              </button>
+
+              <!-- Profile Thumbnail -->
+              <button type="button" class="btn rounded-circle profile"></button>
             </div>
+            <!-- START # Notifications, Messages, Profile # START -->
           </div>
         </main>
       </div>

@@ -20,6 +20,22 @@ body {
 /**
 Main
 **/
+main {
+  & .search-row {
+    & .col-notifs {
+      & button {
+        background-color: white;
+        width: 2.5rem;
+        height: 2.5rem;
+
+        &.profile {
+          background-image: url(../img/logo.png);
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
 
 /**
 Footer
