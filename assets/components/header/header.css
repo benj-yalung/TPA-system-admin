@@ -2,10 +2,11 @@
 Header
 **/
 
-header {
+.sidebar {
   background-color: #0f0346;
-  width: 20%;
+}
 
+header {
   & .site-logo {
     display: block;
     margin: auto;
