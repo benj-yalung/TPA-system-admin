@@ -40,6 +40,10 @@ nav {
   & .nav-link {
     color: white;
     font-weight: 400;
+
+    &:hover {
+      color: aqua;
+    }
   }
 
   & a[aria-current="page"] {
