@@ -35,6 +35,11 @@ main {
       }
     }
   }
+
+  & .section-divider {
+    border: 1px solid black;
+    margin: 1.5rem 0;
+  }
 }
 
 /**
