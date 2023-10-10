@@ -38,7 +38,7 @@ main {
 
   & .card {
     &.infocard {
-      padding: 2rem;
+      padding: 1rem 2rem;
       margin: 1.5rem 0;
 
       &.infocard-dark {
@@ -49,6 +49,13 @@ main {
       &.infocard-mid {
         background-color: #92adef;
         color: white;
+      }
+
+      & .teacher-profile {
+        background-image: url("../img/tutor.png");
+        background-size: cover;
+        background-position: center;
+        width: 6rem;
       }
     }
   }
