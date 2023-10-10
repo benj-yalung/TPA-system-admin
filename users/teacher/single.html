@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="../../assets/css/header.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/css/styles.css" type="text/css" />
 
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- END # Stylesheets, Plugins, and Pre-render Scripts # END -->
 
     <title>Naty Gonzales | TPA System Admin</title>
@@ -117,7 +120,7 @@
                     </div>
 
                     <div class="col-auto">
-                      <p class="fs-4 mb-0 fw-medium">Naty Gonzales</p>
+                      <h1 class="fs-4 mb-0 fw-medium">Naty Gonzales</h1>
                       <p class="mb-0">Teacher</p>
                     </div>
                   </div>
@@ -200,12 +203,28 @@
               </div>
               <!-- END # Infocard # END -->
 
-              <!-- START # Infocard # START -->
+              <!-- START # Course Completion Infocard # START -->
               <div class="card border-0 infocard infocard-mid">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Tempore reprehenderit et odio possimus tempora est quos officia
-                delectus! Est consequuntur earum nesciunt asperiores architecto.
-                Dolore nihil ducimus assumenda consectetur labore.
+                <div class="card-body py-3 px-0">
+                  <h2 class="fs-5 text-decoration-underline">
+                    Course completion
+                  </h2>
+
+                  <div class="row my-5">
+                    <div class="col-6">
+                      <div
+                        class="card border-0 text-light text-center py-3 px-3"
+                        style="background-color: #292567">
+                        <p class="fw-bold fs-1 m-0">3</p>
+                        <p>Completed Courses</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <canvas id="course-completion"></canvas>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- END # Infocard # END -->
 
@@ -225,4 +244,8 @@
       </div>
     </div>
   </body>
+
+  <!-- START # Post-Render Scripts # START -->
+  <script src="../../assets/components/charts/course-completion.js"></script>
+  <!-- END # Post-Render Scripts # END -->
 </html>
