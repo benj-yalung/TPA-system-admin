@@ -57,6 +57,13 @@ main {
         background-position: center;
         width: 6rem;
       }
+
+      & table {
+        & th,
+        & td {
+          padding: 0.25rem 0;
+        }
+      }
     }
   }
 }
