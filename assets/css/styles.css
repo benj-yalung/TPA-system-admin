@@ -35,6 +35,23 @@ main {
       }
     }
   }
+
+  & .card {
+    &.infocard {
+      padding: 2rem;
+      margin: 1.5rem 0;
+
+      &.infocard-dark {
+        background-color: #0f0346;
+        color: white;
+      }
+
+      &.infocard-mid {
+        background-color: #92adef;
+        color: white;
+      }
+    }
+  }
 }
 
 /**
