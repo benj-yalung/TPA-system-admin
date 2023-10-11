@@ -63,6 +63,18 @@ main {
         color: white;
       }
 
+      &.infocard-table-nav {
+        & button {
+          text-decoration: none;
+          font-weight: 500;
+          color: white;
+
+          &:hover, &.active {
+            color: aqua;
+          }
+        }
+      }
+
       & .teacher-profile {
         background-image: url("../img/tutor.png");
         background-size: cover;
