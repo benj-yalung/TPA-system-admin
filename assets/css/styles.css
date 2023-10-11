@@ -69,7 +69,8 @@ main {
           font-weight: 500;
           color: white;
 
-          &:hover, &.active {
+          &:hover,
+          &.active {
             color: aqua;
           }
         }
@@ -85,7 +86,7 @@ main {
       & table {
         & th,
         & td {
-          padding: 0.25rem 0;
+          padding: 0.5rem 0;
         }
       }
     }
