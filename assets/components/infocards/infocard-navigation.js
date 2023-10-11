@@ -11,7 +11,7 @@
  * which corresponds to the ID of a target infocard; hides all infocards with the
  * class "table-infocard" by setting their display property to "none"; and finally,
  *
- * - Displays the infocard with the matching ID as a block-level element, making it
+ * - Displays the infocard with the matching ID as a flex element, making it
  * visible.
  *
  * This code essentially controls a navigation system for infocards,
@@ -37,7 +37,7 @@ buttons.forEach((button) => {
 
     const targetInfocard = document.getElementById(infocardId);
     if (targetInfocard) {
-      targetInfocard.style.display = "block";
+      targetInfocard.style.display = "flex";
     }
   });
 });
