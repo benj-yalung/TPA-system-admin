@@ -76,17 +76,24 @@ main {
         }
       }
 
-      & .teacher-profile {
-        background-image: url("../img/tutor.png");
+      & .profile {
         background-size: cover;
         background-position: center;
         width: 6rem;
+
+        &.teacher {
+          background-image: url("../img/tutor.png");
+        }
+
+        &.student {
+          background-image: url("../img/profile.png");
+        }
       }
 
       & table {
         & th,
         & td {
-          padding: 0.5rem 0;
+          padding: 0.35rem 0;
         }
       }
     }
