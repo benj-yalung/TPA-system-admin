@@ -136,7 +136,9 @@
               <!-- END # Teacher's Profile Infocard # END -->
 
               <!-- START # Teacher's Infocard # START -->
-              <div class="card border-0 infocard">
+              <div
+                class="card border-0 infocard table-infocard"
+                id="teacher-info">
                 <table>
                   <tbody>
                     <tr>
@@ -191,7 +193,9 @@
               <!-- END # Teacher's Infocard # END -->
 
               <!-- START # Courses Created Infocard # START -->
-              <div class="card border-0 infocard">
+              <div
+                class="card border-0 infocard table-infocard"
+                id="courses-created">
                 <table>
                   <thead>
                     <tr>
@@ -254,25 +258,33 @@
                 class="card border-0 infocard infocard-dark infocard-table-nav">
                 <div class="card-body">
                   <div class="row">
-                    <button class="btn btn-link text-start active">
+                    <button
+                      class="btn btn-link text-start active"
+                      data-infocard-id="teacher-info">
                       Personal Information
                     </button>
                   </div>
 
                   <div class="row">
-                    <button class="btn btn-link text-start">
+                    <button
+                      class="btn btn-link text-start"
+                      data-infocard-id="courses-created">
                       Courses Created
                     </button>
                   </div>
 
                   <div class="row">
-                    <button class="btn btn-link text-start">
+                    <button
+                      class="btn btn-link text-start"
+                      data-infocard-id="attendance-report">
                       Attendance Report
                     </button>
                   </div>
 
                   <div class="row">
-                    <button class="btn btn-link text-start">
+                    <button
+                      class="btn btn-link text-start"
+                      data-infocard-id="private-classes">
                       Private Classes
                     </button>
                   </div>
@@ -354,9 +366,15 @@
         </main>
       </div>
     </div>
-  </body>
 
-  <!-- START # Post-Render Scripts # START -->
-  <script src="../../assets/components/charts/course-completion.js"></script>
-  <!-- END # Post-Render Scripts # END -->
+    <!-- START # Post-Render Scripts # START -->
+
+    <!-- Script for Chart Components -->
+    <script src="../../assets/components/charts/course-completion.js"></script>
+
+    <!-- Script for Infocard Components -->
+    <script src="../../assets/components/infocards/infocard-navigation.js"></script>
+    <!-- END # Post-Render Scripts # END -->
+  </body>
 </html>
+
