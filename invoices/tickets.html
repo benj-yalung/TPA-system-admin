@@ -19,6 +19,9 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
     <!-- Font Awesome -->
     <script
@@ -146,8 +149,8 @@
           <hr class="border-3 border-white my-4" />
 
           <div class="row mb-4 justify-content-between">
-            <!-- START # Select All Check # START -->
-            <div class="col-auto">
+            <div class="col-auto gap-1 d-flex align-items-center">
+              <!-- START # Select All Check # START -->
               <div class="form-check">
                 <input
                   class="form-check-input border-2 border-dark-subtle"
@@ -159,8 +162,34 @@
                   Select All
                 </label>
               </div>
+              <!-- END # Select All Check # END -->
+
+              <!-- START # Miscellaneous Buttons # START -->
+              <!-- Plus -->
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                style="width: 2.5rem; height: 2.5rem">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+
+              <!-- Square Plus -->
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                style="width: 2.5rem; height: 2.5rem">
+                <i class="fa-regular fa-square-plus"></i>
+              </button>
+
+              <!-- Trash Can -->
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                style="width: 2.5rem; height: 2.5rem">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <!-- END # Miscellaneous Buttons # END -->
             </div>
-            <!-- END # Select All Check # END -->
 
             <!-- START # Filter Button # START -->
             <div class="col-auto">
@@ -180,13 +209,13 @@
                   <tr>
                     <th class="pb-2" scope="col"></th>
 
-                    <th class="pb-2" scope="col">Courses</th>
+                    <th class="pb-2" scope="col">Ticket Number</th>
 
                     <th class="pb-2" scope="col">Date / Time</th>
 
-                    <th class="pb-2" scope="col">Teacher</th>
+                    <th class="pb-2" scope="col">Account</th>
 
-                    <th class="pb-2" scope="col">Student</th>
+                    <th class="pb-2" scope="col">Category</th>
 
                     <th class="pb-2" scope="col">Actions</th>
                   </tr>
@@ -202,13 +231,13 @@
                         id="select-col" />
                     </td>
 
-                    <td class="">English Orientation 1</td>
+                    <td class="">Ticket #1431413</td>
 
                     <td class="">10/12/2023 10:00 AM</td>
 
                     <td class="">Naty Gonzalez</td>
 
-                    <td class="">Naty Gonzalez</td>
+                    <td class="">IT Help</td>
 
                     <td class="">
                       <i class="fa-solid fa-ellipsis"></i>
@@ -224,13 +253,13 @@
                         id="select-col" />
                     </td>
 
-                    <td class="">English Creative Writing</td>
+                    <td class="">Ticket #5119351</td>
 
                     <td class="">10/13/2023 10:00 AM</td>
 
                     <td class="">Adrian Meija</td>
 
-                    <td class="">Adrian Meija</td>
+                    <td class="">Account Setup</td>
 
                     <td>
                       <i class="fa-solid fa-ellipsis"></i>
@@ -246,13 +275,13 @@
                         id="select-col" />
                     </td>
 
-                    <td class="">Speech</td>
+                    <td class="">Ticket #13459134</td>
 
                     <td class="">10/25/2023 10:00 AM</td>
 
                     <td class="">Tammy White</td>
 
-                    <td class="">Tammy White</td>
+                    <td class="">Password Help</td>
 
                     <td class="">
                       <i class="fa-solid fa-ellipsis"></i>
@@ -268,13 +297,13 @@
                         id="select-col" />
                     </td>
 
-                    <td class="">Writing and Reading 101</td>
+                    <td class="">Ticket #1531</td>
 
                     <td class="">11/12/2023 10:00 AM</td>
 
                     <td class="">Jaden Smith</td>
 
-                    <td class="">Jaden Smith</td>
+                    <td class="">IT Help</td>
 
                     <td class="">
                       <i class="fa-solid fa-ellipsis"></i>
@@ -290,13 +319,13 @@
                         id="select-col" />
                     </td>
 
-                    <td class="">Verbs and Nouns</td>
+                    <td class="">Ticket #13458</td>
 
                     <td class="">12/12/2023 10:00 AM</td>
 
                     <td class="">Matt Junior</td>
 
-                    <td class="">Matt Junior</td>
+                    <td class="">Account Setup</td>
 
                     <td class="">
                       <i class="fa-solid fa-ellipsis"></i>

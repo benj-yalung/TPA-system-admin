@@ -31,14 +31,17 @@ main {
         background-color: hsl(223, 74%, 70%);
       }
     }
+
+    &.rounded-circle {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 
   & .search-row {
     & .col-notifs {
       & button {
         background-color: white;
-        width: 2.5rem;
-        height: 2.5rem;
 
         &.profile {
           background-image: url(../img/logo.png);
