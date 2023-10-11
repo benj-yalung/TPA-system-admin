@@ -21,6 +21,18 @@ body {
 Main
 **/
 main {
+  & button {
+    &.button-custom-light {
+      background-color: #92adef;
+      font-weight: 500;
+      border: 0;
+
+      &:hover {
+        background-color: hsl(223, 74%, 70%);
+      }
+    }
+  }
+
   & .search-row {
     & .col-notifs {
       & button {
@@ -31,6 +43,57 @@ main {
         &.profile {
           background-image: url(../img/logo.png);
           background-size: cover;
+        }
+      }
+    }
+  }
+
+  & .card {
+    &.infocard {
+      padding: 1rem 2rem;
+      margin: 1.5rem 0;
+
+      &.infocard-dark {
+        background-color: #0f0346;
+        color: white;
+      }
+
+      &.infocard-mid {
+        background-color: #92adef;
+        color: white;
+      }
+
+      &.infocard-table-nav {
+        & button {
+          text-decoration: none;
+          font-weight: 500;
+          color: white;
+
+          &:hover,
+          &.active {
+            color: aqua;
+          }
+        }
+      }
+
+      & .profile {
+        background-size: cover;
+        background-position: center;
+        width: 6rem;
+
+        &.teacher {
+          background-image: url("../img/tutor.png");
+        }
+
+        &.student {
+          background-image: url("../img/profile.png");
+        }
+      }
+
+      & table {
+        & th,
+        & td {
+          padding: 0.35rem 0;
         }
       }
     }

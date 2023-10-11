@@ -1,0 +1,529 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- START # Stylesheets, Plugins, and Pre-render Scripts # START -->
+
+    <!-- Bootstrap & Popper -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a7437f466d.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/header.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" type="text/css" />
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- END # Stylesheets, Plugins, and Pre-render Scripts # END -->
+
+    <title>Maria Gomez | TPA System Admin</title>
+  </head>
+
+  <body class="">
+    <div class="row mw-100">
+      <div class="col-2 position-fixed vh-100 sidebar">
+        <header class="p-4">
+          <!-- START # Site Logo # START -->
+          <img
+            src="../../assets/img/logo-removebg-preview.png"
+            alt=""
+            class="site-logo" />
+
+          <hr />
+          <!-- END # Site Logo # END -->
+
+          <!-- START # Nav Sidebar # START -->
+          <nav class="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link" aria-current="page">
+                  <span class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-circle-user">&nbsp;&nbsp;&nbsp;</i>
+                    Users
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../../courses/index.html" class="nav-link">
+                  <span class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-graduation-cap">&nbsp;&nbsp;</i>
+                    Courses
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../../cdp/index.html" class="nav-link">
+                  <span class="d-inline-flex align-items-center">
+                    <i class="fa-regular fa-circle-check">&nbsp;&nbsp;&nbsp;</i>
+                    Career Development Programs
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../../reports/index.html" class="nav-link">
+                  <div class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-chart-line">&nbsp;&nbsp;&nbsp;</i>
+                    Organizational Reports
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../../invoices/index.html" class="nav-link">
+                  <span class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-file-lines"
+                      >&nbsp;&nbsp;&nbsp;&nbsp;</i
+                    >
+                    Invoices
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- END # Nav Sidebar # END -->
+        </header>
+      </div>
+
+      <div class="col offset-2">
+        <main class="max-vh-100 px-5 py-4">
+          <div class="row">
+            <!-- START # Left Infocard Group # START -->
+            <div class="col-7">
+              <!-- START # Student's Profile Infocard # START -->
+              <div class="card border-0 infocard infocard-dark">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <div
+                        class="ratio ratio-1x1 bg-white rounded-circle profile student"></div>
+                    </div>
+
+                    <div class="col-auto">
+                      <h1 class="fs-4 mb-0 fw-medium">Maria Gomez</h1>
+                      <p class="mb-0">Student</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-footer border-0">
+                  <span
+                    class="badge rounded-pill text-bg-success float-end fw-normal px-3 py-2">
+                    Active
+                  </span>
+                </div>
+              </div>
+              <!-- END # Student's Profile Infocard # END -->
+
+              <!-- START # Student's Infocard # START -->
+              <div
+                class="card border-0 infocard table-infocard"
+                id="teacher-info">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Birthday:</th>
+                      <td>10/8/2009</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Mobile:</th>
+                      <td>(480) 123-4567</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Email:</th>
+                      <td>ngonzales@cloudcustomsolutions.com</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">ID #:</th>
+                      <td>1234567</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Date Started:</th>
+                      <td>5/1/2022</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Active:</th>
+                      <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Course/s Enrolled:</th>
+                      <td class="text-truncate">
+                        English Orientation 1, Speech, English...
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Completed Courses:</th>
+                      <td>4</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Private Class/es:</th>
+                      <td>3</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Balance:</th>
+                      <td>$0.00</td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Remarks:</th>
+                      <td>Fully paid</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END # Student's Infocard # END -->
+
+              <!-- START # Grading Report Infocard # START -->
+              <div
+                class="card border-0 infocard table-infocard"
+                id="grading-report"
+                style="display: none">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-center">Classes</th>
+
+                      <th scope="col" class="text-center">
+                        Completed Assignments
+                      </th>
+
+                      <th scope="col" class="text-center">Grade Point</th>
+
+                      <th scope="col" class="text-center">Overall Grade</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="">English Orientation 1</td>
+                      <td class="text-center">4</td>
+                      <td class="text-center">4.33</td>
+                      <td class="text-center">A+</td>
+                    </tr>
+
+                    <tr>
+                      <td class="">Speech</td>
+                      <td class="text-center">2</td>
+                      <td class="text-center">3.33</td>
+                      <td class="text-center">B+</td>
+                    </tr>
+
+                    <tr>
+                      <td class="">English Creative Writing</td>
+                      <td class="text-center">2</td>
+                      <td class="text-center">3.7</td>
+                      <td class="text-center">A-</td>
+                    </tr>
+
+                    <tr>
+                      <td class="">Humanities</td>
+                      <td class="text-center">3</td>
+                      <td class="text-center">4</td>
+                      <td class="text-center">A</td>
+                    </tr>
+
+                    <tr>
+                      <td class="">Math</td>
+                      <td class="text-center">4</td>
+                      <td class="text-center">4</td>
+                      <td class="text-center">A</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END # Courses Created Infocard # END -->
+
+              <!-- START # Attendance Report Infocard # START -->
+              <div
+                class="card border-0 infocard table-infocard"
+                id="attendance-report"
+                style="display: none">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="ps-3 py-3">Classes</th>
+
+                      <th scope="col" class="text-center py-3">Time Started</th>
+
+                      <th scope="col" class="text-center py-3">Attended</th>
+
+                      <th scope="col" class="text-center py-3">Time Joined</th>
+
+                      <th scope="col" class="text-center py-3">Tardiness</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td colspan="5" class="ps-3">English Orientation 1</td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">Session 1</td>
+                      <td class="text-center">10:00 AM</td>
+                      <td class="text-center text-danger fw-bold">No</td>
+                      <td class="text-center">N/A</td>
+                      <td class="text-center">No</td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">Session 2</td>
+                      <td class="text-center">10:00 AM</td>
+                      <td class="text-center">Yes</td>
+                      <td class="text-center">10:03</td>
+                      <td class="text-center">No</td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="5" class="ps-3">Speech</td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">Session 1</td>
+                      <td class="text-center">10:00 AM</td>
+                      <td class="text-center">Yes</td>
+                      <td class="text-center">10:06</td>
+                      <td class="text-center">No</td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">Session 2</td>
+                      <td class="text-center">10:00 AM</td>
+                      <td class="text-center">Yes</td>
+                      <td class="text-center">10:01</td>
+                      <td class="text-center">No</td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">Session 3</td>
+                      <td class="text-center">10:00 AM</td>
+                      <td class="text-center">Yes</td>
+                      <td class="text-center">10:16</td>
+                      <td class="text-center">Yes</td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="5" class="ps-3">English Creative Writing</td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">Session 1</td>
+                      <td class="text-center">10:00 AM</td>
+                      <td class="text-center">Yes</td>
+                      <td class="text-center">10:03</td>
+                      <td class="text-center">No</td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">Session 2</td>
+                      <td class="text-center">10:00 AM</td>
+                      <td class="text-center">Yes</td>
+                      <td class="text-center">10:09</td>
+                      <td class="text-center">No</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END # Attendance Report Infocard # END -->
+
+              <!-- START # Private Classes Infocard # START -->
+              <div
+                class="card border-0 infocard table-infocard"
+                id="private-classes"
+                style="display: none">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-center">Teacher's Name</th>
+
+                      <th scope="col" class="text-center">Schedule</th>
+
+                      <th scope="col" class="text-center">Length</th>
+
+                      <th scope="col" class="text-center">Cost</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Naty Gonzalez</td>
+                      <td class="text-center">10/1/2023 9:00 AM</td>
+                      <td class="text-center">30 mins</td>
+                      <td class="text-center">$13.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Adrian Meija</td>
+                      <td class="text-center">8/1/2023 8:00 AM</td>
+                      <td class="text-center">1 hour</td>
+                      <td class="text-center">$26.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Tammy White</td>
+                      <td class="text-center">8/15/2023 8:00 AM</td>
+                      <td class="text-center">1 hour</td>
+                      <td class="text-center">$26.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END # Private Classes Infocard # END -->
+            </div>
+            <!-- END # Left Infocard Group # END -->
+
+            <!-- START # Infocard Group # START -->
+            <div class="col-5">
+              <!-- START # Table Nav Infocard # START -->
+              <div
+                class="card border-0 infocard infocard-dark infocard-table-nav">
+                <div class="card-body">
+                  <div class="row">
+                    <button
+                      class="btn btn-link text-start active"
+                      data-infocard-id="teacher-info">
+                      Personal Information
+                    </button>
+                  </div>
+
+                  <div class="row">
+                    <button
+                      class="btn btn-link text-start"
+                      data-infocard-id="grading-report">
+                      Grading Report
+                    </button>
+                  </div>
+
+                  <div class="row">
+                    <button
+                      class="btn btn-link text-start"
+                      data-infocard-id="attendance-report">
+                      Attendance Report
+                    </button>
+                  </div>
+
+                  <div class="row">
+                    <button
+                      class="btn btn-link text-start"
+                      data-infocard-id="private-classes">
+                      Private Classes
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- END # Table Infocard # END -->
+
+              <!-- START # Course Completion Infocard # START -->
+              <div class="card border-0 infocard infocard-mid">
+                <div class="card-body py-3 px-0">
+                  <h2 class="fs-5 text-decoration-underline">
+                    Course completion
+                  </h2>
+
+                  <div class="row my-5">
+                    <div class="col-6 d-flex align-items-stretch">
+                      <div
+                        class="card border-0 text-light text-center justify-content-center py-3 px-3"
+                        style="background-color: #292567">
+                        <p class="fw-bold fs-1 m-0">3</p>
+                        <p>Completed Courses</p>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <canvas id="course-completion"></canvas>
+                    </div>
+                  </div>
+
+                  <p class="fs-4 fw-bold text-center">80% Complete!</p>
+                </div>
+              </div>
+              <!-- END # Course Completion Infocard # END -->
+
+              <!-- START # Next Classes Infocard # START -->
+              <div class="card border-0 infocard infocard-dark">
+                <div class="card-body">
+                  <h2 class="fs-5">Next class starting in...</h2>
+
+                  <div class="row text-center">
+                    <div class="col-4 h-100">
+                      <div
+                        class="card d-flex align-items-stretch h-100 text-white"
+                        style="background-color: #877bc0">
+                        <div class="card-body py-3 px-0">
+                          <p class="m-0 fs-4 fw-bold">4</p>
+                          <p class="m-0 text-uppercase fw-bold">Hours</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-8">
+                      <div
+                        class="card d-flex align-items-stretch h-100 text-white"
+                        style="background-color: #877bc0">
+                        <div class="card-body py-3 px-0">
+                          <p class="m-0 text-uppercase fs-5 fw-bold">
+                            March 10, 2023
+                          </p>
+
+                          <p class="m-0 text-uppercase">10:00 am - 12:00 pm</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mx-auto py-3 w-75">
+                    <button
+                      class="btn btn-dark button-custom-light rounded-pill">
+                      Enter classroom
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- END # Next Classes Infocard # END -->
+            </div>
+            <!-- END # Infocard Group # END -->
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- START # Post-Render Scripts # START -->
+
+    <!-- Script for Chart Components -->
+    <script src="../../assets/components/charts/course-completion.js"></script>
+
+    <!-- Script for Infocard Components -->
+    <script src="../../assets/components/infocards/infocard-navigation.js"></script>
+    <!-- END # Post-Render Scripts # END -->
+  </body>
+</html>
