@@ -21,6 +21,18 @@ body {
 Main
 **/
 main {
+  & button {
+    &.button-custom-light {
+      background-color: #92adef;
+      font-weight: 500;
+      border: 0;
+
+      &:hover {
+        background-color: hsl(223, 74%, 70%);
+      }
+    }
+  }
+
   & .search-row {
     & .col-notifs {
       & button {
