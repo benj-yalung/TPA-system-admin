@@ -1,0 +1,317 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- START # Stylesheets, Plugins, and Pre-render Scripts # START -->
+
+    <!-- Bootstrap & Popper -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a7437f466d.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/header.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" type="text/css" />
+
+    <!-- END # Stylesheets, Plugins, and Pre-render Scripts # END -->
+
+    <title>Add Assignment | TPA System Admin</title>
+  </head>
+
+  <body class="">
+    <div class="row mw-100">
+      <div class="col-2 position-fixed vh-100 sidebar">
+        <header class="p-4">
+          <!-- START # Site Logo # START -->
+          <img
+            src="../assets/img/logo-removebg-preview.png"
+            alt=""
+            class="site-logo" />
+          <hr />
+          <!-- END # Site Logo # END -->
+
+          <!-- START # Nav Sidebar # START -->
+          <nav class="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="../users/index.html" class="nav-link">
+                  <span class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-circle-user">&nbsp;&nbsp;&nbsp;</i>
+                    Users
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-current="page">
+                  <span class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-graduation-cap">&nbsp;&nbsp;</i>
+                    Courses
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../cdp/index.html" class="nav-link">
+                  <span class="d-inline-flex align-items-center">
+                    <i class="fa-regular fa-circle-check">&nbsp;&nbsp;&nbsp;</i>
+                    Career Development Programs
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../reports/index.html" class="nav-link">
+                  <div class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-chart-line">&nbsp;&nbsp;&nbsp;</i>
+                    Organizational Reports
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../invoices/index.html" class="nav-link">
+                  <span class="d-inline-flex align-items-center">
+                    <i class="fa-solid fa-file-lines"
+                      >&nbsp;&nbsp;&nbsp;&nbsp;</i
+                    >
+                    Invoices
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- END # Nav Sidebar # END -->
+        </header>
+      </div>
+
+      <div class="col offset-2">
+        <main class="max-vh-100 px-5 py-4">
+          <div class="row search-row align-items-center">
+            <div class="col-6"></div>
+
+            <div class="col-3"></div>
+
+            <!-- START # Notifications, Messages, Profile # START -->
+            <div class="col-3 col-notifs d-flex gap-4 justify-content-end">
+              <!-- Notifications -->
+              <button type="button" class="btn btn-light rounded-circle">
+                <i class="fa-solid fa-bell"></i>
+              </button>
+
+              <!-- Messages -->
+              <button type="button" class="btn btn-light rounded-circle">
+                <i class="fa-solid fa-envelope"></i>
+              </button>
+
+              <!-- Profile Thumbnail -->
+              <button type="button" class="btn rounded-circle profile"></button>
+            </div>
+            <!-- END # Notifications, Messages, Profile # END -->
+          </div>
+
+          <hr class="border-3 border-white my-4" />
+
+          <!-- START # Add Assignment Form # START -->
+          <div class="row pt-4">
+            <h2 class="fs-5 fw-bold">Create Course</h2>
+          </div>
+
+          <!-- START # Form Component # START -->
+          <div class="row">
+            <form action="" class="row px-5 g-4">
+              <h2 class="fs-5 fw-bold">Add Assignment</h2>
+
+              <!-- START # Assignment Information # START -->
+
+              <!-- Assignment Name -->
+              <div class="col-12">
+                <label for="assignmentName" class="form-label">
+                  Assignment Name
+                </label>
+
+                <input type="text" class="form-control" id="assignmentName" />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label" for="description">Description</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  rows="5"
+                  class="form-control"></textarea>
+              </div>
+
+              <!-- Type Group -->
+              <div class="row my-4">
+                <div class="col-12">
+                  <p class="mb-2">Type</p>
+
+                  <div class="row mb-3">
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="watch-video"
+                        value="watch-video"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="watch-video">
+                        <i class="fa-solid fa-clapperboard">&nbsp;</i>
+                        Watch Video
+                      </label>
+                    </div>
+
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="homework"
+                        value="homework"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="homework">
+                        <i class="fa-solid fa-pen">&nbsp;</i>
+                        Homework
+                      </label>
+                    </div>
+
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="reading"
+                        value="reading"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="reading">
+                        <i class="fa-solid fa-book-open">&nbsp;</i>
+                        Reading
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="quiz"
+                        value="quiz"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="quiz">
+                        <i class="fa-solid fa-question">&nbsp;</i>
+                        Quiz
+                      </label>
+                    </div>
+
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="conversational-class"
+                        value="conversational-class"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="conversational-class">
+                        <i class="fa-solid fa-comments"></i>
+                        Conversational Class
+                      </label>
+                    </div>
+
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="exam"
+                        id="exam"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="exam">
+                        <i class="fa-regular fa-file-lines">&nbsp;</i>
+                        Exam
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-4">
+                  <label for="total-points" class="form-label">
+                    Total Points
+                  </label>
+
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-points"
+                    name="total-points" />
+                </div>
+
+                <div class="col-4">
+                  <label for="end-date" class="form-label">Due Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="end-date"
+                    name="end-date" />
+                </div>
+              </div>
+              <!-- END # Assignment Information # END -->
+
+              <!-- Preview & Submit Buttons -->
+              <div class="col-2">
+                <a
+                  href="create.html"
+                  class="btn rounded-pill button-custom-aqua w-100"
+                  >Back</a
+                >
+              </div>
+
+              <div class="col-2">
+                <a
+                  href="index.html"
+                  class="btn rounded-pill text-white button-custom-light w-100">
+                  Submit
+                </a>
+              </div>
+            </form>
+          </div>
+          <!-- END # Form Component # END -->
+
+          <!-- END # Add Assignment Form # END -->
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
