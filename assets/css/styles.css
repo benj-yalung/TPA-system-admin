@@ -21,7 +21,8 @@ body {
 Main
 **/
 main {
-  & button {
+  & button,
+  & a {
     &.button-custom-light {
       background-color: hsl(223, 74%, 75%);
       font-weight: 500;
