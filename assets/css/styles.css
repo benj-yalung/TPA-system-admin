@@ -23,12 +23,16 @@ Main
 main {
   & button {
     &.button-custom-light {
-      background-color: #92adef;
+      background-color: hsl(223, 74%, 75%);
       font-weight: 500;
       border: 0;
 
       &:hover {
         background-color: hsl(223, 74%, 70%);
+      }
+
+      &:active {
+        background-color: hsl(223, 74%, 80%) !important;
       }
     }
 
