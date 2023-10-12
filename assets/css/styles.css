@@ -6,6 +6,18 @@ Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /**
+Debugging
+**/
+.test {
+  height: 3rem;
+  border-radius: 1rem;
+
+  &.t-dark {
+    background-color: hsl(0, 0%, 10%);
+  }
+}
+
+/**
 Body
  **/
 
@@ -21,12 +33,12 @@ body {
 Main
 **/
 main {
-  & button,
-  & a {
+  & .btn {
+    font-weight: 700;
+    border: 0;
+
     &.button-custom-light {
       background-color: hsl(223, 74%, 75%);
-      font-weight: 500;
-      border: 0;
 
       &:hover {
         background-color: hsl(223, 74%, 70%);
@@ -34,6 +46,18 @@ main {
 
       &:active {
         background-color: hsl(223, 74%, 80%) !important;
+      }
+    }
+
+    &.button-custom-aqua {
+      background-color: hsl(180, 100%, 50%);
+
+      &:hover {
+        background-color: hsl(180, 100%, 45%);
+      }
+
+      &:active {
+        background-color: hsl(180, 100%, 70%) !important;
       }
     }
 
