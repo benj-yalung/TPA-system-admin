@@ -130,6 +130,15 @@ main {
       }
     }
   }
+
+  & form {
+    & input[type="checkbox"] {
+      &.checkbox-mid {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
 }
 
 /**

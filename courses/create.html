@@ -140,27 +140,42 @@
             <form action="" class="row px-5 g-4">
               <!-- Course Information -->
               <div class="col-8">
-                <div class="test t-dark"></div>
+                <label for="courseName" class="form-label">Course Name</label>
+
+                <input type="text" class="form-control" id="courseName" />
+              </div>
+
+              <div class="col-1 d-flex flex-column align-items-center">
+                <label class="form-label" for="check-graded">Graded</label>
+                <input
+                  class="form-check-input checkbox-mid"
+                  type="checkbox"
+                  value="graded"
+                  id="check-graded" />
               </div>
 
               <div class="col">
-                <div class="test t-dark"></div>
-              </div>
-
-              <div class="col">
-                <div class="test t-dark"></div>
+                <label for="maximumClassSize" class="form-label">
+                  Maximum Class Size
+                </label>
+                <input type="text" class="form-control" id="maximumClassSize" />
               </div>
 
               <div class="col-8">
-                <div class="test t-dark"></div>
+                <label for="courseSubtitle" class="form-label">
+                  Course Subtitle
+                </label>
+                <input type="text" class="form-control" id="courseSubtitle" />
               </div>
 
-              <div class="col">
-                <div class="test t-dark"></div>
+              <div class="col-4">
+                <label for="teacher" class="form-label">Teacher</label>
+                <input type="text" class="form-control" id="teacher" />
               </div>
 
               <div class="col-8">
-                <div class="test t-dark"></div>
+                <label for="categories" class="form-label">Categories</label>
+                <input type="text" class="form-control" id="categories" />
               </div>
 
               <!-- Schedule -->
@@ -170,19 +185,34 @@
 
               <div class="row mb-4">
                 <div class="col-4">
-                  <div class="test t-dark"></div>
+                  <label for="start-date" class="form-label">Start Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="start-date"
+                    name="start-date" />
                 </div>
               </div>
 
               <div class="row mb-4">
                 <div class="col-4">
-                  <div class="test t-dark"></div>
+                  <label for="end-date" class="form-label">End Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="end-date"
+                    name="end-date" />
                 </div>
               </div>
 
               <div class="row mb-4">
                 <div class="col-4">
-                  <div class="test t-dark"></div>
+                  <label for="time" class="form-label">Time</label>
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="time"
+                    name="time" />
                 </div>
               </div>
 
