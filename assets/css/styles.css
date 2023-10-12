@@ -35,7 +35,7 @@ Main
 main {
   & .btn {
     font-weight: 700;
-    border: 0;
+    /* border: 0; */
 
     &.button-custom-light {
       background-color: hsl(223, 74%, 75%);

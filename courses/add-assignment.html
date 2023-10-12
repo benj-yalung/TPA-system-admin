@@ -128,7 +128,7 @@
 
           <hr class="border-3 border-white my-4" />
 
-          <!-- START # Create Course Form # START -->
+          <!-- START # Add Assignment Form # START -->
           <div class="row pt-4">
             <h2 class="fs-5 fw-bold">Create Course</h2>
           </div>
@@ -137,65 +137,149 @@
           <div class="row">
             <form action="" class="row px-5 g-4">
               <h2 class="fs-5 fw-bold">Add Assignment</h2>
-              <!-- Course Information -->
-              <div class="col-8">
-                <label for="courseName" class="form-label">Course Name</label>
 
-                <input type="text" class="form-control" id="courseName" />
-              </div>
+              <!-- START # Assignment Information # START -->
 
-              <div class="col-1 d-flex flex-column align-items-center">
-                <label class="form-label" for="check-graded">Graded</label>
-                <input
-                  class="form-check-input checkbox-mid"
-                  type="checkbox"
-                  value="graded"
-                  id="check-graded" />
-              </div>
-
-              <div class="col">
-                <label for="maximumClassSize" class="form-label">
-                  Maximum Class Size
-                </label>
-                <input type="text" class="form-control" id="maximumClassSize" />
-              </div>
-
-              <div class="col-8">
-                <label for="courseSubtitle" class="form-label">
-                  Course Subtitle
-                </label>
-                <input type="text" class="form-control" id="courseSubtitle" />
-              </div>
-
-              <div class="col-4">
-                <label for="teacher" class="form-label">Teacher</label>
-                <input type="text" class="form-control" id="teacher" />
-              </div>
-
-              <div class="col-8">
-                <label for="categories" class="form-label">Categories</label>
-                <input type="text" class="form-control" id="categories" />
-              </div>
-
-              <!-- Schedule -->
+              <!-- Assignment Name -->
               <div class="col-12">
-                <h3 class="fs-5 fw-bold px-0">Schedule</h3>
+                <label for="assignmentName" class="form-label">
+                  Assignment Name
+                </label>
+
+                <input type="text" class="form-control" id="assignmentName" />
               </div>
 
-              <div class="row mb-4">
-                <div class="col-4">
-                  <label for="start-date" class="form-label">Start Date</label>
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="start-date"
-                    name="start-date" />
+              <div class="col-12">
+                <label class="form-label" for="description">Description</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  rows="5"
+                  class="form-control"></textarea>
+              </div>
+
+              <!-- Type Group -->
+              <div class="row my-4">
+                <div class="col-12">
+                  <p class="mb-2">Type</p>
+
+                  <div class="row mb-3">
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="watch-video"
+                        value="watch-video"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="watch-video">
+                        <i class="fa-solid fa-clapperboard">&nbsp;</i>
+                        Watch Video
+                      </label>
+                    </div>
+
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="homework"
+                        value="homework"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="homework">
+                        <i class="fa-solid fa-pen">&nbsp;</i>
+                        Homework
+                      </label>
+                    </div>
+
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="reading"
+                        value="reading"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="reading">
+                        <i class="fa-solid fa-book-open">&nbsp;</i>
+                        Reading
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="quiz"
+                        value="quiz"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="quiz">
+                        <i class="fa-solid fa-question">&nbsp;</i>
+                        Quiz
+                      </label>
+                    </div>
+
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="conversational-class"
+                        value="conversational-class"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="conversational-class">
+                        <i class="fa-solid fa-comments"></i>
+                        Conversational Class
+                      </label>
+                    </div>
+
+                    <div class="col-3">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="type"
+                        id="exam"
+                        id="exam"
+                        autocomplete="off" />
+                      <label
+                        class="btn btn-outline-primary w-100 text-start"
+                        for="exam">
+                        <i class="fa-regular fa-file-lines">&nbsp;</i>
+                        Exam
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class="row mb-4">
                 <div class="col-4">
-                  <label for="end-date" class="form-label">End Date</label>
+                  <label for="total-points" class="form-label">
+                    Total Points
+                  </label>
+
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-points"
+                    name="total-points" />
+                </div>
+
+                <div class="col-4">
+                  <label for="end-date" class="form-label">Due Date</label>
                   <input
                     type="date"
                     class="form-control"
@@ -203,23 +287,11 @@
                     name="end-date" />
                 </div>
               </div>
-
-              <div class="row mb-4">
-                <div class="col-4">
-                  <label for="time" class="form-label">Time</label>
-                  <input
-                    type="time"
-                    class="form-control"
-                    id="time"
-                    name="time" />
-                </div>
-              </div>
+              <!-- END # Assignment Information # END -->
 
               <!-- Preview & Submit Buttons -->
               <div class="col-2">
-                <a class="btn rounded-pill button-custom-aqua w-100">
-                  Preview
-                </a>
+                <a class="btn rounded-pill button-custom-aqua w-100">Back</a>
               </div>
 
               <div class="col-2">
@@ -232,7 +304,7 @@
           </div>
           <!-- END # Form Component # END -->
 
-          <!-- END # Create Course Form # END -->
+          <!-- END # Add Assignment Form # END -->
         </main>
       </div>
     </div>
