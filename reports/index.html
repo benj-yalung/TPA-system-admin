@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="../assets/css/header.css" type="text/css" />
     <link rel="stylesheet" href="../assets/css/styles.css" type="text/css" />
 
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- END # Stylesheets, Plugins, and Pre-render Scripts # END -->
 
     <title>Organizational Reports | TPA System Admin</title>
@@ -199,7 +202,18 @@
             <!-- START # Dashboard Tables # START -->
             <div class="row g-4">
               <div class="col-6">
-                <div class="test t-dark"></div>
+                <div class="card border-0 h-100">
+                  <div class="card-header border-0 bg-white">
+                    <button class="btn btn-light btn-sm float-end">
+                      <i class="fa-solid fa-file-csv"></i>
+                      Export as CSV
+                    </button>
+                  </div>
+
+                  <div class="card-body">
+                    <canvas id="teacher-student"></canvas>
+                  </div>
+                </div>
               </div>
 
               <div class="col-6">
@@ -243,5 +257,11 @@
         </main>
       </div>
     </div>
+
+    <!-- START # Post-Render Scripts # START -->
+
+    <!-- Script for Chart Components -->
+    <script src="../assets/components/charts/teacher-student.js"></script>
+    <!-- END # Post-Render Scripts # END -->
   </body>
 </html>
