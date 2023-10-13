@@ -50,7 +50,7 @@ new Chart(ChartTeacherStudent, {
         borderWidth: 2,
         borderColor: "hsla(188, 79%, 55%, 1)",
         backgroundColor: "hsla(188, 79%, 55%, 0.5)",
-        tension: 0.25,
+        tension: 0.1,
       },
       {
         label: "Student",
@@ -60,7 +60,7 @@ new Chart(ChartTeacherStudent, {
         pointRadius: 0,
         borderColor: "hsla(199, 95%, 76%, 1)",
         backgroundColor: "hsla(199, 95%, 76%, 0.5)",
-        tension: 0.25,
+        tension: 0.1,
       },
     ],
   },
