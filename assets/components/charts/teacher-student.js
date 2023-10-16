@@ -65,6 +65,7 @@ new Chart(ChartTeacherStudent, {
     ],
   },
   options: {
+    maintainAspectRatio: false,
     responsive: true,
     scales: {
       y: {
