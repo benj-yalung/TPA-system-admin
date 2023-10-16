@@ -3,7 +3,7 @@ Main
 */
 main {
   & .btn {
-    &.page-nav {
+    &.page-nav-button {
       background-color: hsl(251, 92%, 14%);
       color: white;
       width: 12rem;

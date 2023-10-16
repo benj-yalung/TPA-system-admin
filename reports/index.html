@@ -155,11 +155,11 @@
           <hr class="border-3 border-white my-4" />
 
           <!-- START # Courses, Teachers, Students # START -->
-          <div class="row g-4 mb-4">
+          <div class="row g-4 mb-4 page-nav">
             <div class="col d-flex justify-content-center">
               <button
-                class="btn btn-link rounded-5 text-center text-decoration-none page-nav button"
-                data-infocard-id="">
+                class="btn btn-link rounded-5 text-center text-decoration-none page-nav-button"
+                data-nav-id="courses-table">
                 <i class="fa-solid fa-graduation-cap fs-1"></i> <br />
 
                 <span class="fs-3">Courses</span> <br />
@@ -170,8 +170,8 @@
 
             <div class="col d-flex justify-content-center">
               <button
-                class="btn btn-link rounded-5 text-center text-decoration-none page-nav button"
-                data-infocard-id="">
+                class="btn btn-link rounded-5 text-center text-decoration-none page-nav-button"
+                data-nav-id="teachers-table">
                 <i class="fa-solid fa-user-tie fs-1"></i> <br />
 
                 <span class="fs-3">Teacher</span> <br />
@@ -182,8 +182,8 @@
 
             <div class="col d-flex justify-content-center">
               <button
-                class="btn btn-link rounded-5 text-center text-decoration-none page-nav button"
-                data-infocard-id="">
+                class="btn btn-link rounded-5 text-center text-decoration-none page-nav-button"
+                data-nav-id="students-table">
                 <i class="fa-solid fa-book-open-reader fs-1"></i> <br />
 
                 <span class="fs-3">Students</span> <br />
@@ -208,7 +208,7 @@
           </div>
 
           <!-- START # Dashboard Tables # START -->
-          <div class="row g-4 mb-4" id="dashboard-tables">
+          <div class="row g-4 mb-4 sub-nav-item" id="dashboard-tables">
             <!-- Teacher-Student Chart -->
             <div class="col-6">
               <div class="card border-0 py-2 card-or-dashboard">
@@ -533,7 +533,10 @@
           <!-- END # Dashboard Tables # END -->
 
           <!-- START # Courses Table # START -->
-          <div class="row g-4 mb-4">
+          <div
+            class="row g-4 mb-4 sub-nav-item"
+            id="courses-table"
+            style="display: none">
             <div class="col-12">
               <div class="card py-2 border-0">
                 <div class="card-header d-flex border-0 bg-white">
@@ -858,7 +861,10 @@
           <!-- END # Courses Table # END -->
 
           <!-- START # Teachers Table # START -->
-          <div class="row g-4 mb-4">
+          <div
+            class="row g-4 mb-4 sub-nav-item"
+            id="teachers-table"
+            style="display: none">
             <div class="col-12">
               <div class="card py-2 border-0">
                 <div class="card-header d-flex border-0 bg-white">
@@ -1127,7 +1133,10 @@
           <!-- END # Teachers Table # END -->
 
           <!-- START # Students Table # START -->
-          <div class="row g-4 mb-4">
+          <div
+            class="row g-4 mb-4 sub-nav-item"
+            id="students-table"
+            style="display: none">
             <div class="col-12">
               <div class="card py-2 border-0">
                 <div class="card-header d-flex border-0 bg-white">
@@ -1422,6 +1431,9 @@
 
     <!-- Script for Chart Components -->
     <script src="../assets/components/charts/teacher-student.js"></script>
+
+    <!-- Script for Navigation Components -->
+    <script src="../../assets/components/infocards/page-nav.js"></script>
     <!-- END # Post-Render Scripts # END -->
   </body>
 </html>
