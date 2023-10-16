@@ -29,6 +29,10 @@ body {
   --bs-body-font-family: "Roboto", "Arial", sans-serif;
 }
 
+.bg-custom-mid {
+  background-color: hsl(222, 54%, 64%) !important;
+}
+
 /*
 Main
 */
@@ -172,14 +176,12 @@ main {
   }
 }
 
+.card {
+  &.card-or-dashboard {
+    height: 25rem;
+  }
+}
+
 /*
 Footer
 */
-
-/*
-Page-specific Styles
-*/
-
-/* Organizational Reports */
-.page-or {
-}
