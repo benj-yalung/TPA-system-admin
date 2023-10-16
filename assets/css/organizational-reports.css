@@ -1,0 +1,37 @@
+/*
+Main
+*/
+main {
+  & .btn {
+    &.reports-nav-button {
+      background-color: hsl(251, 92%, 14%);
+      color: white;
+      width: 12rem;
+      height: 12rem;
+
+      &:hover {
+        background-color: hsl(251, 92%, 19%);
+      }
+
+      /* This is the active button pseudoclass. Don't confuse this with the active button class below */
+      &:active {
+        background-color: hsl(251, 92%, 24%);
+        color: white;
+      }
+
+      &.active {
+        /* This is the active button class. Don't confuse this with the active button pseudoclass above */
+        background-color: hsl(222, 54%, 64%);
+        color: black;
+
+        &:hover {
+          background-color: hsl(222, 54%, 69%);
+        }
+
+        &:active {
+          background-color: hsl(222, 54%, 74%);
+        }
+      }
+    }
+  }
+}
