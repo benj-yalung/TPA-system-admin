@@ -4,7 +4,7 @@ Main
 main {
   & .card {
     &.infocard {
-      &.infocard-table-nav {
+      &.page-nav {
         & button {
           text-decoration: none;
           font-weight: 500;

@@ -8,17 +8,19 @@
  * - Adds the "active" class to the clicked button to visually indicate it's selected;
  *
  * - Retrieves the value of the "data-infocard-id" attribute from the clicked button,
- * which corresponds to the ID of a target infocard; hides all infocards with the
+ * which corresponds to the ID of a target infocard; hides all dynNavItem
+ with the
  * class "table-infocard" by setting their display property to "none"; and finally,
  *
  * - Displays the infocard with the matching ID as a flex element, making it
  * visible.
  *
- * This code essentially controls a navigation system for infocards,
+ * This code essentially controls a navigation system for dynNavItem
+,
  * ensuring that only the selected infocard is displayed while others are hidden.
  */
 
-const buttons = document.querySelectorAll(".infocard-table-nav button");
+const buttons = document.querySelectorAll(".page-nav button");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -28,16 +30,16 @@ buttons.forEach((button) => {
 
     button.classList.add("active");
 
-    const infocardId = button.getAttribute("data-infocard-id");
+    const subNavId = button.getAttribute("data-nav-id");
 
-    const infocards = document.querySelectorAll(".table-infocard");
-    infocards.forEach((infocard) => {
-      infocard.style.display = "none";
+    const subNavItems = document.querySelectorAll(".sub-nav-item");
+    subNavItems.forEach((subNavItem) => {
+      subNavItem.style.display = "none";
     });
 
-    const targetInfocard = document.getElementById(infocardId);
-    if (targetInfocard) {
-      targetInfocard.style.display = "flex";
+    const targetSubNavItem = document.getElementById(subNavId);
+    if (targetSubNavItem) {
+      targetSubNavItem.style.display = "flex";
     }
   });
 });
