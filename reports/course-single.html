@@ -140,13 +140,13 @@
                 <div class="card-body">
                   <table class="table table-striped">
                     <thead>
-                      <tr>
-                        <th class="border-0 py-4">Class Started</th>
-                        <th class="text-center border-0 py-4">Class Ended</th>
-                        <th class="text-center border-0 py-4">Teacher</th>
-                        <th class="text-center border-0 py-4">Students</th>
-                        <th class="text-center border-0 py-4">Time Joined</th>
-                        <th class="text-center border-0 py-4">Time Left</th>
+                      <tr class="text-center">
+                        <th class="border-0 py-4 col-2">Class Started</th>
+                        <th class="border-0 py-4 col-2">Class Ended</th>
+                        <th class="border-0 py-4 col-2">Teacher</th>
+                        <th class="border-0 py-4 col-2">Students</th>
+                        <th class="border-0 py-4 col-2">Time Joined</th>
+                        <th class="border-0 py-4 col-2">Time Left</th>
                       </tr>
                     </thead>
 
@@ -163,15 +163,9 @@
 
                       <!-- Row #2 | Summary Chart -->
                       <tr>
-                        <td colspan="3" rowspan="13">
-                          <div class="row m-0 border border-dark">
-                            <div class="col-3">test</div>
-
-                            <div class="col-9 d-flex h-100">
-                              <canvas id="or-course-single-summary"></canvas>
-                            </div>
-                          </div>
-                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td class="text-center">Eric Berman</td>
                         <td class="text-center">10:05 AM</td>
                         <td class="text-center">1:00 PM</td>
@@ -179,6 +173,9 @@
 
                       <!-- Row #3 -->
                       <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td class="text-center">Nicole Ramos</td>
                         <td class="text-center">10:00 AM</td>
                         <td class="text-center">1:00 AM</td>
@@ -186,6 +183,9 @@
 
                       <!-- Row #4 -->
                       <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td class="text-center">Fatima Sanchez</td>
                         <td class="text-center text-danger">10:31 AM</td>
                         <td class="text-center">1:00 PM</td>
@@ -193,6 +193,36 @@
 
                       <!-- Row #5 -->
                       <tr>
+                        <td colspan="3" rowspan="10" class="border">
+                          <div class="card border-0">
+                            <div class="card-body row">
+                              <div class="col-5">
+                                <h3 class="fs-4 fw-bold">Summary</h3>
+                                <p class="fs-5 fw-bold">
+                                  # of Students scheduled for class: 15
+                                </p>
+                              </div>
+
+                              <div class="col-7 d-flex">
+                                <canvas id="or-course-single-summary"></canvas>
+                              </div>
+                            </div>
+
+                            <div class="card-footer border-0 bg-white row m-0">
+                              <div class="col text-center">
+                                <p class="fw-bold">On time: 9</p>
+                              </div>
+
+                              <div class="col text-center">
+                                <p class="fw-bold">Late: 5</p>
+                              </div>
+
+                              <div class="col text-center">
+                                <p class="fw-bold">Absent: 1</p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                         <td class="text-center">Donovan Casey</td>
                         <td class="text-center">10:03 AM</td>
                         <td class="text-center">1:00 AM</td>
