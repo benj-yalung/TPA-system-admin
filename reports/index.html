@@ -27,14 +27,23 @@
 
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="../assets/css/header.css" type="text/css" />
+
     <link rel="stylesheet" href="../assets/css/styles.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="../assets/css/organizational-reports.css"
+      type="text/css" />
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- END # Stylesheets, Plugins, and Pre-render Scripts # END -->
 
     <title>Organizational Reports | TPA System Admin</title>
   </head>
 
-  <body class="">
+  <body class="page-or">
     <div class="row mw-100">
       <div class="col-2 position-fixed vh-100 sidebar">
         <header class="p-4">
@@ -88,9 +97,9 @@
               <li class="nav-item">
                 <a href="../invoices/index.html" class="nav-link">
                   <span class="d-inline-flex align-items-center">
-                    <i class="fa-solid fa-file-lines"
-                      >&nbsp;&nbsp;&nbsp;&nbsp;</i
-                    >
+                    <i class="fa-solid fa-file-lines">
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                    </i>
                     Invoices
                   </span>
                 </a>
@@ -140,10 +149,1271 @@
               <!-- Profile Thumbnail -->
               <button type="button" class="btn rounded-circle profile"></button>
             </div>
-            <!-- START # Notifications, Messages, Profile # START -->
+            <!-- END # Notifications, Messages, Profile # END -->
           </div>
+
+          <hr class="border-3 border-white my-4" />
+
+          <!-- START # Courses, Teachers, Students # START -->
+          <div class="row g-4 mb-4 page-nav">
+            <div class="col d-flex justify-content-center">
+              <button
+                class="btn btn-link rounded-5 text-center text-decoration-none page-nav-button"
+                data-nav-id="courses-table">
+                <i class="fa-solid fa-graduation-cap fs-1"></i> <br />
+
+                <span class="fs-3">Courses</span> <br />
+
+                <span>15</span>
+              </button>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+              <button
+                class="btn btn-link rounded-5 text-center text-decoration-none page-nav-button"
+                data-nav-id="teachers-table">
+                <i class="fa-solid fa-user-tie fs-1"></i> <br />
+
+                <span class="fs-3">Teacher</span> <br />
+
+                <span>12</span>
+              </button>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+              <button
+                class="btn btn-link rounded-5 text-center text-decoration-none page-nav-button"
+                data-nav-id="students-table">
+                <i class="fa-solid fa-book-open-reader fs-1"></i> <br />
+
+                <span class="fs-3">Students</span> <br />
+
+                <span>130</span>
+              </button>
+            </div>
+          </div>
+          <!-- END # Courses, Teachers, Students # END -->
+
+          <!-- Select Dropdown -->
+          <div class="row g-4 mb-4">
+            <div class="col-4">
+              <select
+                class="form-select form-select-sm rounded-pill border-0 ps-4"
+                aria-label="Small select example">
+                <option selected>All Time</option>
+                <option value="1">Last 12 months</option>
+                <option value="2">Custom</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- START # Dashboard Tables # START -->
+          <div class="row g-4 mb-4 sub-nav-item" id="dashboard-tables">
+            <!-- Teacher-Student Chart -->
+            <div class="col-6">
+              <div class="card border-0 py-2 card-or-dashboard">
+                <div class="d-flex card-header border-0 bg-white">
+                  <div class="col">
+                    <h2 class="fs-5 fw-bold">English Orientation 1</h2>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-light btn-sm float-end">
+                      <i class="fa-solid fa-file-csv"></i>
+                      Export as CSV
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <canvas class="" id="teacher-student"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- Courses Table -->
+            <div class="col-6">
+              <div class="card card-or-dashboard border-0 py-2">
+                <div class="d-flex card-header border-0 bg-white">
+                  <div class="col">
+                    <!--  -->
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-light btn-sm float-end">
+                      <i class="fa-solid fa-file-csv"></i>
+                      Export as CSV
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body position-relative overflow-y-auto">
+                  <table class="table table-borderless align-middle">
+                    <thead class="">
+                      <tr>
+                        <th class="pb-2 bg-custom-mid" scope="col">#</th>
+                        <th class="pb-2 bg-custom-mid" scope="col">Courses</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="">1</td>
+                        <td class="">English Orientation 1</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">2</td>
+                        <td class="">English Creative Writing</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">3</td>
+                        <td class="">Speech</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">4</td>
+                        <td class="">Writing and Reading 101</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">5</td>
+                        <td class="">Verbs and Nouns</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">6</td>
+                        <td class="">Government</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">7</td>
+                        <td class="">Business Management</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">8</td>
+                        <td class="">Laudantium eligendi deserunt quam</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">9</td>
+                        <td class="">Nam laudantium, accusantium, iure</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">10</td>
+                        <td class="">Eos, consequatur reprehenderit.</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">11</td>
+                        <td class="">Totam mollitia ducimus illo</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">12</td>
+                        <td class="">Ullam laboriosam optio voluptatibus</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">13</td>
+                        <td class="">Corporis aliquam quas?</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">14</td>
+                        <td class="">Explicabo optio accusantium voluptates</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teachers Table -->
+            <div class="col-6">
+              <div class="card card-or-dashboard border-0 py-2">
+                <div class="d-flex card-header border-0 bg-white">
+                  <div class="col">
+                    <!--  -->
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-light btn-sm float-end">
+                      <i class="fa-solid fa-file-csv"></i>
+                      Export as CSV
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body position-relative overflow-y-auto">
+                  <table class="table table-borderless align-middle">
+                    <thead class="">
+                      <tr>
+                        <th class="pb-2 bg-custom-mid" scope="col">#</th>
+                        <th class="pb-2 bg-custom-mid" scope="col">Teachers</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="">1</td>
+                        <td class="">Naty Gonzales</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">2</td>
+                        <td class="">Adrian Meija</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">3</td>
+                        <td class="">Tammy White</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">4</td>
+                        <td class="">Jaden Smith</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">5</td>
+                        <td class="">Matt Junior</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">6</td>
+                        <td class="">James Scott</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">7</td>
+                        <td class="">Ezekiel Johnson</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">8</td>
+                        <td class="">Laudantium Eligendi</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">9</td>
+                        <td class="">Nam Laudantium</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">10</td>
+                        <td class="">Eos Consequatur</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">11</td>
+                        <td class="">Totam Mollitia</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">12</td>
+                        <td class="">Ullam Laboriosam</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">13</td>
+                        <td class="">Corporis Aliquam</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">14</td>
+                        <td class="">Explicabo Optio</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Students Table -->
+            <div class="col-6">
+              <div class="card card-or-dashboard border-0 py-2">
+                <div class="d-flex card-header border-0 bg-white">
+                  <div class="col">
+                    <!--  -->
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-light btn-sm float-end">
+                      <i class="fa-solid fa-file-csv"></i>
+                      Export as CSV
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body position-relative overflow-y-auto">
+                  <table class="table table-borderless align-middle">
+                    <thead class="">
+                      <tr>
+                        <th class="pb-2 bg-custom-mid" scope="col">#</th>
+                        <th class="pb-2 bg-custom-mid" scope="col">Students</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="">1</td>
+                        <td class="">EMaria Gomez</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">2</td>
+                        <td class="">James Smith</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">3</td>
+                        <td class="">Benjamin White</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">4</td>
+                        <td class="">Aaron Scott</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">5</td>
+                        <td class="">Michael Katz</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">6</td>
+                        <td class="">Andrew Zambetti</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">7</td>
+                        <td class="">Donovian Casey</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">8</td>
+                        <td class="">Laudantium Eligendi</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">9</td>
+                        <td class="">Nam Laudantium</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">10</td>
+                        <td class="">Eos Consequatur</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">11</td>
+                        <td class="">Totam Mollitia</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">12</td>
+                        <td class="">Ullam Laboriosam</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">13</td>
+                        <td class="">Corporis Aliquam</td>
+                      </tr>
+
+                      <tr>
+                        <td class="">14</td>
+                        <td class="">Explicabo Optio</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END # Dashboard Tables # END -->
+
+          <!-- START # Courses Table # START -->
+          <div
+            class="row g-4 mb-4 sub-nav-item"
+            id="courses-table"
+            style="display: none">
+            <div class="col-12">
+              <div class="card py-2 border-0">
+                <div class="card-header d-flex border-0 bg-white">
+                  <div class="col">
+                    <!--  -->
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-light btn-sm float-end">
+                      <i class="fa-solid fa-file-csv"></i>
+                      Export as CSV
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <table
+                    class="table table-borderless align-middle table-striped">
+                    <thead class="text-center">
+                      <tr>
+                        <th class="pb-2" scope="col"></th>
+
+                        <th class="pb-2" scope="col">Course</th>
+
+                        <th class="pb-2" scope="col">Date</th>
+
+                        <th class="pb-2" scope="col">Number of Teachers</th>
+
+                        <th class="pb-2" scope="col">
+                          Number of Enrolled Students
+                        </th>
+
+                        <th class="pb-2" scope="col">Actions</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            English Orientation 1
+                          </a>
+                        </td>
+
+                        <td class="text-center">5/23/22 8:00 AM</td>
+
+                        <td class="text-center">1</td>
+
+                        <td class="text-center">10</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            English Creative Writing
+                          </a>
+                        </td>
+
+                        <td class="text-center">7/16/22 10:00 AM</td>
+
+                        <td class="text-center">2</td>
+
+                        <td class="text-center">15</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            Speech
+                          </a>
+                        </td>
+
+                        <td class="text-center">3/20/23 9:00 AM</td>
+
+                        <td class="text-center">2</td>
+
+                        <td class="text-center">13</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            Writing and Reading 101
+                          </a>
+                        </td>
+
+                        <td class="text-center">8/12/22 10:00 AM</td>
+
+                        <td class="text-center">1</td>
+
+                        <td class="text-center">11</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            Verbs and Nouns
+                          </a>
+                        </td>
+
+                        <td class="text-center">4/9/22 10:00 AM</td>
+
+                        <td class="text-center">1</td>
+
+                        <td class="text-center">13</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            Government
+                          </a>
+                        </td>
+
+                        <td class="text-center">10/8/22 8:00 AM</td>
+
+                        <td class="text-center">1</td>
+
+                        <td class="text-center">15</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            Business Management
+                          </a>
+                        </td>
+
+                        <td class="text-center">11/29/22 7:00 AM</td>
+
+                        <td class="text-center">2</td>
+
+                        <td class="text-center">20</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            Science & Technology
+                          </a>
+                        </td>
+
+                        <td class="text-center">7/16/2 10:00 AM</td>
+
+                        <td class="text-center">2</td>
+
+                        <td class="text-center">21</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            Sales
+                          </a>
+                        </td>
+
+                        <td class="text-center">2/18/22 9:00 AM</td>
+
+                        <td class="text-center">1</td>
+
+                        <td class="text-center">10</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <input
+                            class="form-check-input border-2 border-dark-subtle"
+                            type="checkbox"
+                            value=""
+                            id="select-col" />
+                        </td>
+
+                        <td class="">
+                          <a href="course-single.html" class="text-dark">
+                            Law
+                          </a>
+                        </td>
+
+                        <td class="text-center">8/4/22 10:00 AM</td>
+
+                        <td class="text-center">1</td>
+
+                        <td class="text-center">12</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END # Courses Table # END -->
+
+          <!-- START # Teachers Table # START -->
+          <div
+            class="row g-4 mb-4 sub-nav-item"
+            id="teachers-table"
+            style="display: none">
+            <div class="col-12">
+              <div class="card py-2 border-0">
+                <div class="card-header d-flex border-0 bg-white">
+                  <div class="col">
+                    <!--  -->
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-light btn-sm float-end">
+                      <i class="fa-solid fa-file-csv"></i>
+                      Export as CSV
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <table
+                    class="table table-borderless align-middle table-striped">
+                    <thead class="">
+                      <tr>
+                        <th class="pb-2" scope="col">Teacher</th>
+
+                        <th class="pb-2 text-center" scope="col">Active</th>
+
+                        <th class="pb-2 text-center" scope="col">Courses</th>
+
+                        <th class="pb-2 text-center" scope="col">Actions</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Naty Gonzalez
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">2</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Adrian Meija
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">1</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Tammy White
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">3</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Jaden Smith
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">2</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Matt Junior
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">1</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            James Scott
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">4</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Ezekiel Johnson
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">2</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Isabel Sanchez
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">3</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Connor White
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-white border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-white"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">4</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/teacher/single.html"
+                            class="text-dark">
+                            Kayla Summers
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">3</td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END # Teachers Table # END -->
+
+          <!-- START # Students Table # START -->
+          <div
+            class="row g-4 mb-4 sub-nav-item"
+            id="students-table"
+            style="display: none">
+            <div class="col-12">
+              <div class="card py-2 border-0">
+                <div class="card-header d-flex border-0 bg-white">
+                  <div class="col">
+                    <!--  -->
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-light btn-sm float-end">
+                      <i class="fa-solid fa-file-csv"></i>
+                      Export as CSV
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <table
+                    class="table table-borderless align-middle table-striped">
+                    <thead class="">
+                      <tr>
+                        <th class="pb-2" scope="col">Student</th>
+
+                        <th class="pb-2 text-center" scope="col">Active</th>
+
+                        <th class="pb-2 text-center" scope="col">Courses</th>
+
+                        <th class="pb-2 text-center" scope="col">Actions</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Maria Gomez
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          English Orientation 1
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            James Smith
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          English Creative Writing
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Benjamin White
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          Speech
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Aaron Scott
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          English Creative Writing
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Michael Katz
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          Verbs and Nouns
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Andrew Zambetti
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          Humanities, Speech
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Donovian Casey
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          Math
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Fatima Sanchez
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          Economics
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Eric Berman
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-white border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-white"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          Math, English Orientation 1
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="">
+                          <a
+                            href="../users/student/single.html"
+                            class="text-dark">
+                            Mike Cavaleri
+                          </a>
+                        </td>
+
+                        <td class="text-center">
+                          <span
+                            class="badge bg-success border border-1 border-dark-subtle p-1">
+                            <i class="fa-solid fa-square text-success"></i>
+                          </span>
+                        </td>
+
+                        <td class="text-center text-decoration-underline">
+                          Speech
+                        </td>
+
+                        <td class="text-center">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END # Students Table # END -->
         </main>
       </div>
     </div>
+
+    <!-- START # Post-Render Scripts # START -->
+
+    <!-- Script for Chart Components -->
+    <script src="../assets/components/charts/teacher-student.js"></script>
+
+    <!-- Script for Navigation Components -->
+    <script src="../../assets/components/infocards/page-nav.js"></script>
+    <!-- END # Post-Render Scripts # END -->
   </body>
 </html>

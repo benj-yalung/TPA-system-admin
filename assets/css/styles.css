@@ -5,9 +5,9 @@ Fonts
 /* Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/**
+/*
 Debugging
-**/
+*/
 .test {
   height: 3rem;
   border-radius: 1rem;
@@ -17,9 +17,9 @@ Debugging
   }
 }
 
-/**
+/*
 Body
- **/
+ */
 
 body {
   background-color: #f8f9fa;
@@ -29,9 +29,13 @@ body {
   --bs-body-font-family: "Roboto", "Arial", sans-serif;
 }
 
-/**
+.bg-custom-mid {
+  background-color: hsl(222, 54%, 64%) !important;
+}
+
+/*
 Main
-**/
+*/
 main {
   & .btn {
     font-weight: 700;
@@ -95,19 +99,6 @@ main {
         color: white;
       }
 
-      &.infocard-table-nav {
-        & button {
-          text-decoration: none;
-          font-weight: 500;
-          color: white;
-
-          &:hover,
-          &.active {
-            color: aqua;
-          }
-        }
-      }
-
       & .profile {
         background-size: cover;
         background-position: center;
@@ -141,6 +132,12 @@ main {
   }
 }
 
-/**
+.card {
+  &.card-or-dashboard {
+    height: 25rem;
+  }
+}
+
+/*
 Footer
-**/
+*/

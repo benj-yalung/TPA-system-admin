@@ -28,6 +28,7 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="../../assets/css/header.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/users.css" type="text/css" />
 
     <!-- Chart JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -137,7 +138,7 @@
 
               <!-- START # Teacher's Infocard # START -->
               <div
-                class="card border-0 infocard table-infocard"
+                class="card border-0 infocard sub-nav-item"
                 id="teacher-info">
                 <table>
                   <tbody>
@@ -194,7 +195,7 @@
 
               <!-- START # Courses Created Infocard # START -->
               <div
-                class="card border-0 infocard table-infocard"
+                class="card border-0 infocard sub-nav-item"
                 id="courses-created"
                 style="display: none">
                 <table>
@@ -258,7 +259,7 @@
 
               <!-- START # Attendance Report Infocard # START -->
               <div
-                class="card border-0 infocard table-infocard"
+                class="card border-0 infocard sub-nav-item"
                 id="attendance-report"
                 style="display: none">
                 <div class="card-header bg-white border-0 px-0">
@@ -313,7 +314,7 @@
 
               <!-- START # Private Classes Infocard # START -->
               <div
-                class="card border-0 infocard table-infocard"
+                class="card border-0 infocard sub-nav-item"
                 id="private-classes"
                 style="display: none">
                 <table>
@@ -353,13 +354,12 @@
             <!-- START # Infocard Group # START -->
             <div class="col-5">
               <!-- START # Table Nav Infocard # START -->
-              <div
-                class="card border-0 infocard infocard-dark infocard-table-nav">
+              <div class="card border-0 infocard infocard-dark page-nav">
                 <div class="card-body">
                   <div class="row">
                     <button
                       class="btn btn-link text-start active"
-                      data-infocard-id="teacher-info">
+                      data-nav-id="teacher-info">
                       Personal Information
                     </button>
                   </div>
@@ -367,7 +367,7 @@
                   <div class="row">
                     <button
                       class="btn btn-link text-start"
-                      data-infocard-id="courses-created">
+                      data-nav-id="courses-created">
                       Courses Created
                     </button>
                   </div>
@@ -375,7 +375,7 @@
                   <div class="row">
                     <button
                       class="btn btn-link text-start"
-                      data-infocard-id="attendance-report">
+                      data-nav-id="attendance-report">
                       Attendance Report
                     </button>
                   </div>
@@ -383,7 +383,7 @@
                   <div class="row">
                     <button
                       class="btn btn-link text-start"
-                      data-infocard-id="private-classes">
+                      data-nav-id="private-classes">
                       Private Classes
                     </button>
                   </div>
@@ -471,8 +471,8 @@
     <!-- Script for Chart Components -->
     <script src="../../assets/components/charts/course-completion.js"></script>
 
-    <!-- Script for Infocard Components -->
-    <script src="../../assets/components/infocards/infocard-navigation.js"></script>
+    <!-- Script for Navigation Components -->
+    <script src="../../assets/components/infocards/page-nav.js"></script>
     <!-- END # Post-Render Scripts # END -->
   </body>
 </html>
