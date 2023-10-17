@@ -161,10 +161,16 @@
                         <td class="text-center">1:00 PM</td>
                       </tr>
 
-                      <!-- Row #2 -->
+                      <!-- Row #2 | Summary Chart -->
                       <tr>
                         <td colspan="3" rowspan="13">
-                          <canvas id="course-completion"></canvas>
+                          <div class="row m-0 border border-dark">
+                            <div class="col-3">test</div>
+
+                            <div class="col-9 d-flex h-100">
+                              <canvas id="or-course-single-summary"></canvas>
+                            </div>
+                          </div>
                         </td>
                         <td class="text-center">Eric Berman</td>
                         <td class="text-center">10:05 AM</td>
@@ -277,7 +283,7 @@
     <!-- START # Post-Render Scripts # START -->
 
     <!-- Script for Chart Components -->
-    <script src="../../assets/components/charts/course-completion.js"></script>
+    <script src="../../assets/components/charts/or-course-single.js"></script>
 
     <!-- END # Post-Render Scripts # END -->
   </body>
