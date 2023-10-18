@@ -1,0 +1,36 @@
+.radio-button {
+  + .btn {
+    border-color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 50%);
+
+    & i {
+      color: hsl(223, 74%, 75%);
+    }
+
+    &:hover {
+      border-color: hsl(0, 0%, 45%) !important;
+      color: hsl(0, 0%, 45%) !important;
+
+      & i {
+        color: hsl(223, 74%, 70%);
+      }
+    }
+  }
+
+  &:checked {
+    + .btn {
+      border-color: hsl(223, 74%, 75%);
+      background-color: hsl(223, 74%, 75%);
+
+      & i {
+        color: white;
+      }
+
+      &:hover {
+        background-color: hsl(223, 74%, 80%);
+        border-color: hsl(223, 74%, 75%) !important;
+        color: white !important;
+      }
+    }
+  }
+}

@@ -128,17 +128,29 @@
             <!-- START # Notifications, Messages, Profile # START -->
             <div class="col-3 col-notifs d-flex gap-4 justify-content-end">
               <!-- Notifications -->
-              <button type="button" class="btn btn-light rounded-circle">
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <i class="fa-solid fa-bell"></i>
               </button>
 
               <!-- Messages -->
-              <button type="button" class="btn btn-light rounded-circle">
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <i class="fa-solid fa-envelope"></i>
               </button>
 
               <!-- Profile Thumbnail -->
-              <button type="button" class="btn rounded-circle profile"></button>
+              <button
+                type="button"
+                class="btn rounded-circle profile"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank"></button>
             </div>
             <!-- END # Notifications, Messages, Profile # END -->
           </div>
@@ -166,6 +178,8 @@
               <button
                 type="button"
                 class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank"
                 style="width: 2.5rem; height: 2.5rem">
                 <i class="fa-solid fa-plus"></i>
               </button>
@@ -174,6 +188,8 @@
               <button
                 type="button"
                 class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank"
                 style="width: 2.5rem; height: 2.5rem">
                 <i class="fa-regular fa-square-plus"></i>
               </button>
@@ -182,6 +198,8 @@
               <button
                 type="button"
                 class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank"
                 style="width: 2.5rem; height: 2.5rem">
                 <i class="fa-solid fa-trash-can"></i>
               </button>
@@ -190,7 +208,11 @@
 
             <!-- START # Filter Button # START -->
             <div class="col-auto">
-              <button type="button" class="btn btn-light">
+              <button
+                type="button"
+                class="btn btn-light"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <i class="fa-solid fa-sliders px-1"></i>
                 Filter
               </button>
@@ -208,15 +230,17 @@
 
                     <th class="pb-2" scope="col">Courses</th>
 
-                    <th class="pb-2" scope="col">Start Date</th>
+                    <th class="pb-2 text-center" scope="col">Start Date</th>
 
-                    <th class="pb-2" scope="col">End Date</th>
+                    <th class="pb-2 text-center" scope="col">End Date</th>
 
-                    <th class="pb-2" scope="col">Teacher</th>
+                    <th class="pb-2 text-center" scope="col">Teacher</th>
 
-                    <th class="pb-2" scope="col">Students Enrolled</th>
+                    <th class="pb-2 text-center" scope="col">
+                      Students Enrolled
+                    </th>
 
-                    <th class="pb-2" scope="col">Actions</th>
+                    <th class="pb-2 text-center" scope="col">Actions</th>
                   </tr>
                 </thead>
 
@@ -232,16 +256,47 @@
 
                     <td class="">English Orientation 1</td>
 
-                    <td class="">10/12/2023</td>
+                    <td class="text-center">10/12/2023</td>
 
-                    <td class="">10/12/2023</td>
+                    <td class="text-center">10/12/2023</td>
 
-                    <td class="">Naty Gonzalez</td>
+                    <td class="text-center">Naty Gonzalez</td>
 
-                    <td class="">12 students</td>
+                    <td class="text-center">12 students</td>
 
-                    <td class="">
-                      <i class="fa-solid fa-ellipsis"></i>
+                    <td class="text-center">
+                      <!-- START # Actions Dropdown Button # START -->
+                      <div class="dropstart">
+                        <button
+                          class="btn btn-link text-dark"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 1
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 2
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- END # Actions Dropdown Button # END -->
                     </td>
                   </tr>
 
@@ -256,16 +311,47 @@
 
                     <td class="">English Creative Writing</td>
 
-                    <td class="">10/13/2023</td>
+                    <td class="text-center">10/13/2023</td>
 
-                    <td class="">10/13/2023</td>
+                    <td class="text-center">10/13/2023</td>
 
-                    <td class="">Adrian Meija</td>
+                    <td class="text-center">Adrian Meija</td>
 
-                    <td class="">23 students</td>
+                    <td class="text-center">23 students</td>
 
-                    <td>
-                      <i class="fa-solid fa-ellipsis"></i>
+                    <td class="text-center">
+                      <!-- START # Actions Dropdown Button # START -->
+                      <div class="dropstart">
+                        <button
+                          class="btn btn-link text-dark"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 1
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 2
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- END # Actions Dropdown Button # END -->
                     </td>
                   </tr>
 
@@ -280,16 +366,47 @@
 
                     <td class="">Speech</td>
 
-                    <td class="">10/25/2023</td>
+                    <td class="text-center">10/25/2023</td>
 
-                    <td class="">10/25/2023</td>
+                    <td class="text-center">10/25/2023</td>
 
-                    <td class="">Tammy White</td>
+                    <td class="text-center">Tammy White</td>
 
-                    <td class="">32 students</td>
+                    <td class="text-center">32 students</td>
 
-                    <td class="">
-                      <i class="fa-solid fa-ellipsis"></i>
+                    <td class="text-center">
+                      <!-- START # Actions Dropdown Button # START -->
+                      <div class="dropstart">
+                        <button
+                          class="btn btn-link text-dark"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 1
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 2
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- END # Actions Dropdown Button # END -->
                     </td>
                   </tr>
 
@@ -304,16 +421,47 @@
 
                     <td class="">Writing and Reading 101</td>
 
-                    <td class="">11/12/2023</td>
+                    <td class="text-center">11/12/2023</td>
 
-                    <td class="">11/12/2023</td>
+                    <td class="text-center">11/12/2023</td>
 
-                    <td class="">Jaden Smith</td>
+                    <td class="text-center">Jaden Smith</td>
 
-                    <td class="">10 students</td>
+                    <td class="text-center">10 students</td>
 
-                    <td class="">
-                      <i class="fa-solid fa-ellipsis"></i>
+                    <td class="text-center">
+                      <!-- START # Actions Dropdown Button # START -->
+                      <div class="dropstart">
+                        <button
+                          class="btn btn-link text-dark"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 1
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 2
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- END # Actions Dropdown Button # END -->
                     </td>
                   </tr>
 
@@ -328,16 +476,47 @@
 
                     <td class="">Verbs and Nouns</td>
 
-                    <td class="">12/12/2023</td>
+                    <td class="text-center">12/12/2023</td>
 
-                    <td class="">12/12/2023</td>
+                    <td class="text-center">12/12/2023</td>
 
-                    <td class="">Matt Junior</td>
+                    <td class="text-center">Matt Junior</td>
 
-                    <td class="">12 students</td>
+                    <td class="text-center">12 students</td>
 
-                    <td class="">
-                      <i class="fa-solid fa-ellipsis"></i>
+                    <td class="text-center">
+                      <!-- START # Actions Dropdown Button # START -->
+                      <div class="dropstart">
+                        <button
+                          class="btn btn-link text-dark"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 1
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 2
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#" class="dropdown-item py-2">
+                              Dropdown Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- END # Actions Dropdown Button # END -->
                     </td>
                   </tr>
                 </tbody>
@@ -358,5 +537,50 @@
         </main>
       </div>
     </div>
+
+    <!-- START # Blank Modal # START -->
+    <div class="modal" id="modal-blank">
+      <div class="modal-dialog">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <p class="fw-bold">Quasi, possimus totam.</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p class="lh-base">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                  voluptates sit reprehenderit a numquam corrupti qui, ullam est
+                  et praesentium impedit minima eveniet magni provident fugit
+                  esse doloribus voluptate inventore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-4 fw-bold border-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  style="background-color: #3f356b">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END # Blank Modal # END -->
   </body>
 </html>

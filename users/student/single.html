@@ -28,6 +28,7 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="../../assets/css/header.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/users.css" type="text/css" />
 
     <!-- Chart JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -137,7 +138,7 @@
 
               <!-- START # Student's Infocard # START -->
               <div
-                class="card border-0 infocard table-infocard"
+                class="card border-0 infocard sub-nav-item"
                 id="teacher-info">
                 <table>
                   <tbody>
@@ -204,10 +205,10 @@
 
               <!-- START # Grading Report Infocard # START -->
               <div
-                class="card border-0 infocard table-infocard"
+                class="card border-0 infocard sub-nav-item"
                 id="grading-report"
                 style="display: none">
-                <table class="table table-striped">
+                <table class="table border-light">
                   <thead>
                     <tr>
                       <th scope="col" class="text-center">Classes</th>
@@ -264,13 +265,13 @@
 
               <!-- START # Attendance Report Infocard # START -->
               <div
-                class="card border-0 infocard table-infocard"
+                class="card border-0 infocard sub-nav-item"
                 id="attendance-report"
                 style="display: none">
-                <table class="table table-striped">
+                <table class="table border-light">
                   <thead>
                     <tr>
-                      <th scope="col" class="ps-3 py-3">Classes</th>
+                      <th scope="col" class="ps-3 py-3" colspan="2">Classes</th>
 
                       <th scope="col" class="text-center py-3">Time Started</th>
 
@@ -284,10 +285,11 @@
 
                   <tbody>
                     <tr>
-                      <td colspan="5" class="ps-3">English Orientation 1</td>
+                      <td colspan="6" class="ps-3">English Orientation 1</td>
                     </tr>
 
                     <tr>
+                      <td></td>
                       <td class="text-center">Session 1</td>
                       <td class="text-center">10:00 AM</td>
                       <td class="text-center text-danger fw-bold">No</td>
@@ -296,6 +298,7 @@
                     </tr>
 
                     <tr>
+                      <td></td>
                       <td class="text-center">Session 2</td>
                       <td class="text-center">10:00 AM</td>
                       <td class="text-center">Yes</td>
@@ -304,10 +307,11 @@
                     </tr>
 
                     <tr>
-                      <td colspan="5" class="ps-3">Speech</td>
+                      <td colspan="6" class="ps-3">Speech</td>
                     </tr>
 
                     <tr>
+                      <td></td>
                       <td class="text-center">Session 1</td>
                       <td class="text-center">10:00 AM</td>
                       <td class="text-center">Yes</td>
@@ -316,6 +320,7 @@
                     </tr>
 
                     <tr>
+                      <td></td>
                       <td class="text-center">Session 2</td>
                       <td class="text-center">10:00 AM</td>
                       <td class="text-center">Yes</td>
@@ -324,6 +329,7 @@
                     </tr>
 
                     <tr>
+                      <td></td>
                       <td class="text-center">Session 3</td>
                       <td class="text-center">10:00 AM</td>
                       <td class="text-center">Yes</td>
@@ -332,10 +338,11 @@
                     </tr>
 
                     <tr>
-                      <td colspan="5" class="ps-3">English Creative Writing</td>
+                      <td colspan="6" class="ps-3">English Creative Writing</td>
                     </tr>
 
                     <tr>
+                      <td></td>
                       <td class="text-center">Session 1</td>
                       <td class="text-center">10:00 AM</td>
                       <td class="text-center">Yes</td>
@@ -344,6 +351,7 @@
                     </tr>
 
                     <tr>
+                      <td></td>
                       <td class="text-center">Session 2</td>
                       <td class="text-center">10:00 AM</td>
                       <td class="text-center">Yes</td>
@@ -357,7 +365,7 @@
 
               <!-- START # Private Classes Infocard # START -->
               <div
-                class="card border-0 infocard table-infocard"
+                class="card border-0 infocard sub-nav-item"
                 id="private-classes"
                 style="display: none">
                 <table>
@@ -404,13 +412,12 @@
             <!-- START # Infocard Group # START -->
             <div class="col-5">
               <!-- START # Table Nav Infocard # START -->
-              <div
-                class="card border-0 infocard infocard-dark infocard-table-nav">
+              <div class="card border-0 infocard infocard-dark page-nav">
                 <div class="card-body">
                   <div class="row">
                     <button
                       class="btn btn-link text-start active"
-                      data-infocard-id="teacher-info">
+                      data-nav-id="teacher-info">
                       Personal Information
                     </button>
                   </div>
@@ -418,7 +425,7 @@
                   <div class="row">
                     <button
                       class="btn btn-link text-start"
-                      data-infocard-id="grading-report">
+                      data-nav-id="grading-report">
                       Grading Report
                     </button>
                   </div>
@@ -426,7 +433,7 @@
                   <div class="row">
                     <button
                       class="btn btn-link text-start"
-                      data-infocard-id="attendance-report">
+                      data-nav-id="attendance-report">
                       Attendance Report
                     </button>
                   </div>
@@ -434,7 +441,7 @@
                   <div class="row">
                     <button
                       class="btn btn-link text-start"
-                      data-infocard-id="private-classes">
+                      data-nav-id="private-classes">
                       Private Classes
                     </button>
                   </div>
@@ -455,7 +462,7 @@
                         class="card border-0 text-light text-center justify-content-center py-3 px-3"
                         style="background-color: #292567">
                         <p class="fw-bold fs-1 m-0">3</p>
-                        <p>Completed Courses</p>
+                        <p>Incomplete Assignments</p>
                       </div>
                     </div>
 
@@ -503,7 +510,9 @@
 
                   <div class="row mx-auto py-3 w-75">
                     <button
-                      class="btn btn-dark button-custom-light rounded-pill">
+                      class="btn btn-dark button-custom-light rounded-pill"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       Enter classroom
                     </button>
                   </div>
@@ -517,13 +526,58 @@
       </div>
     </div>
 
+    <!-- START # Blank Modal # START -->
+    <div class="modal" id="modal-blank">
+      <div class="modal-dialog">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <p class="fw-bold">Quasi, possimus totam.</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p class="lh-base">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                  voluptates sit reprehenderit a numquam corrupti qui, ullam est
+                  et praesentium impedit minima eveniet magni provident fugit
+                  esse doloribus voluptate inventore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-4 fw-bold border-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  style="background-color: #3f356b">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END # Blank Modal # END -->
+
     <!-- START # Post-Render Scripts # START -->
 
     <!-- Script for Chart Components -->
     <script src="../../assets/components/charts/course-completion.js"></script>
 
     <!-- Script for Infocard Components -->
-    <script src="../../assets/components/infocards/infocard-navigation.js"></script>
+    <script src="../../assets/components/navs/page-nav.js"></script>
     <!-- END # Post-Render Scripts # END -->
   </body>
 </html>

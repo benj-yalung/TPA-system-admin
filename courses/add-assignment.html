@@ -28,6 +28,7 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="../assets/css/header.css" type="text/css" />
     <link rel="stylesheet" href="../assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/courses.css" type="text/css" />
 
     <!-- END # Stylesheets, Plugins, and Pre-render Scripts # END -->
 
@@ -111,17 +112,29 @@
             <!-- START # Notifications, Messages, Profile # START -->
             <div class="col-3 col-notifs d-flex gap-4 justify-content-end">
               <!-- Notifications -->
-              <button type="button" class="btn btn-light rounded-circle">
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <i class="fa-solid fa-bell"></i>
               </button>
 
               <!-- Messages -->
-              <button type="button" class="btn btn-light rounded-circle">
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <i class="fa-solid fa-envelope"></i>
               </button>
 
               <!-- Profile Thumbnail -->
-              <button type="button" class="btn rounded-circle profile"></button>
+              <button
+                type="button"
+                class="btn rounded-circle profile"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank"></button>
             </div>
             <!-- END # Notifications, Messages, Profile # END -->
           </div>
@@ -167,7 +180,7 @@
                     <div class="col-3">
                       <input
                         type="radio"
-                        class="btn-check"
+                        class="btn-check radio-button"
                         name="type"
                         id="watch-video"
                         value="watch-video"
@@ -183,7 +196,7 @@
                     <div class="col-3">
                       <input
                         type="radio"
-                        class="btn-check"
+                        class="btn-check radio-button"
                         name="type"
                         id="homework"
                         value="homework"
@@ -199,7 +212,7 @@
                     <div class="col-3">
                       <input
                         type="radio"
-                        class="btn-check"
+                        class="btn-check radio-button"
                         name="type"
                         id="reading"
                         value="reading"
@@ -217,7 +230,7 @@
                     <div class="col-3">
                       <input
                         type="radio"
-                        class="btn-check"
+                        class="btn-check radio-button"
                         name="type"
                         id="quiz"
                         value="quiz"
@@ -233,7 +246,7 @@
                     <div class="col-3">
                       <input
                         type="radio"
-                        class="btn-check"
+                        class="btn-check radio-button"
                         name="type"
                         id="conversational-class"
                         value="conversational-class"
@@ -249,7 +262,7 @@
                     <div class="col-3">
                       <input
                         type="radio"
-                        class="btn-check"
+                        class="btn-check radio-button"
                         name="type"
                         id="exam"
                         id="exam"
@@ -266,7 +279,7 @@
               </div>
 
               <div class="row mb-4">
-                <div class="col-4">
+                <div class="col-3">
                   <label for="total-points" class="form-label">
                     Total Points
                   </label>
@@ -278,7 +291,7 @@
                     name="total-points" />
                 </div>
 
-                <div class="col-4">
+                <div class="col-3">
                   <label for="end-date" class="form-label">Due Date</label>
                   <input
                     type="date"
@@ -313,5 +326,49 @@
         </main>
       </div>
     </div>
+    <!-- START # Blank Modal # START -->
+    <div class="modal" id="modal-blank">
+      <div class="modal-dialog">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <p class="fw-bold">Quasi, possimus totam.</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p class="lh-base">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                  voluptates sit reprehenderit a numquam corrupti qui, ullam est
+                  et praesentium impedit minima eveniet magni provident fugit
+                  esse doloribus voluptate inventore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-4 fw-bold border-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  style="background-color: #3f356b">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END # Blank Modal # END -->
   </body>
 </html>

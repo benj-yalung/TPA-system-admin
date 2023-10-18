@@ -28,6 +28,7 @@ new Chart(ChartOrCourseSingleSummary, {
       datalabels: {
         labels: {
           value: {
+            textAlign: "center",
             align: "end",
             anchor: "end",
             color: "black",
