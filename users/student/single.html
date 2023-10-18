@@ -462,7 +462,7 @@
                         class="card border-0 text-light text-center justify-content-center py-3 px-3"
                         style="background-color: #292567">
                         <p class="fw-bold fs-1 m-0">3</p>
-                        <p>Completed Courses</p>
+                        <p>Incomplete Assignments</p>
                       </div>
                     </div>
 
@@ -510,7 +510,9 @@
 
                   <div class="row mx-auto py-3 w-75">
                     <button
-                      class="btn btn-dark button-custom-light rounded-pill">
+                      class="btn btn-dark button-custom-light rounded-pill"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       Enter classroom
                     </button>
                   </div>
@@ -523,6 +525,51 @@
         </main>
       </div>
     </div>
+
+    <!-- START # Blank Modal # START -->
+    <div class="modal" id="modal-blank">
+      <div class="modal-dialog">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <p class="fw-bold">Quasi, possimus totam.</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p class="lh-base">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                  voluptates sit reprehenderit a numquam corrupti qui, ullam est
+                  et praesentium impedit minima eveniet magni provident fugit
+                  esse doloribus voluptate inventore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-4 fw-bold border-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  style="background-color: #3f356b">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END # Blank Modal # END -->
 
     <!-- START # Post-Render Scripts # START -->
 
