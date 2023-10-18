@@ -137,17 +137,29 @@
             <!-- START # Notifications, Messages, Profile # START -->
             <div class="col-3 col-notifs d-flex gap-4 justify-content-end">
               <!-- Notifications -->
-              <button type="button" class="btn btn-light rounded-circle">
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <i class="fa-solid fa-bell"></i>
               </button>
 
               <!-- Messages -->
-              <button type="button" class="btn btn-light rounded-circle">
+              <button
+                type="button"
+                class="btn btn-light rounded-circle"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <i class="fa-solid fa-envelope"></i>
               </button>
 
               <!-- Profile Thumbnail -->
-              <button type="button" class="btn rounded-circle profile"></button>
+              <button
+                type="button"
+                class="btn rounded-circle profile"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank"></button>
             </div>
             <!-- END # Notifications, Messages, Profile # END -->
           </div>
@@ -217,7 +229,10 @@
                     <h2 class="fs-5 fw-bold">English Orientation 1</h2>
                   </div>
                   <div class="col">
-                    <button class="btn btn-light btn-sm float-end">
+                    <button
+                      class="btn btn-light btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       <i class="fa-solid fa-file-csv"></i>
                       Export as CSV
                     </button>
@@ -238,7 +253,10 @@
                     <!--  -->
                   </div>
                   <div class="col">
-                    <button class="btn btn-light btn-sm float-end">
+                    <button
+                      class="btn btn-light btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       <i class="fa-solid fa-file-csv"></i>
                       Export as CSV
                     </button>
@@ -338,7 +356,10 @@
                     <!--  -->
                   </div>
                   <div class="col">
-                    <button class="btn btn-light btn-sm float-end">
+                    <button
+                      class="btn btn-light btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       <i class="fa-solid fa-file-csv"></i>
                       Export as CSV
                     </button>
@@ -438,7 +459,10 @@
                     <!--  -->
                   </div>
                   <div class="col">
-                    <button class="btn btn-light btn-sm float-end">
+                    <button
+                      class="btn btn-light btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       <i class="fa-solid fa-file-csv"></i>
                       Export as CSV
                     </button>
@@ -544,7 +568,10 @@
                     <!--  -->
                   </div>
                   <div class="col">
-                    <button class="btn btn-light btn-sm float-end">
+                    <button
+                      class="btn btn-light btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       <i class="fa-solid fa-file-csv"></i>
                       Export as CSV
                     </button>
@@ -852,7 +879,10 @@
                     <!--  -->
                   </div>
                   <div class="col">
-                    <button class="btn btn-light btn-sm float-end">
+                    <button
+                      class="btn btn-light btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       <i class="fa-solid fa-file-csv"></i>
                       Export as CSV
                     </button>
@@ -1124,7 +1154,10 @@
                     <!--  -->
                   </div>
                   <div class="col">
-                    <button class="btn btn-light btn-sm float-end">
+                    <button
+                      class="btn btn-light btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       <i class="fa-solid fa-file-csv"></i>
                       Export as CSV
                     </button>
@@ -1406,6 +1439,51 @@
         </main>
       </div>
     </div>
+
+    <!-- START # Blank Modal # START -->
+    <div class="modal" id="modal-blank">
+      <div class="modal-dialog">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <p class="fw-bold">Quasi, possimus totam.</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p class="lh-base">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                  voluptates sit reprehenderit a numquam corrupti qui, ullam est
+                  et praesentium impedit minima eveniet magni provident fugit
+                  esse doloribus voluptate inventore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-4 fw-bold border-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  style="background-color: #3f356b">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END # Blank Modal # END -->
 
     <!-- START # Post-Render Scripts # START -->
 
